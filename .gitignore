@@ -1,0 +1,9 @@
+.vscode
+*.o
+*.txt
+*.pdf
+program
+btc
+RPN
+PmergeMe
+data.csv
