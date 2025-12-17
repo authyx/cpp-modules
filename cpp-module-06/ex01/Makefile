@@ -1,7 +1,7 @@
 NAME = program
 
-INCLUDES =  ${wildcard *.hpp}
-SRCS = ${wildcard *.cpp}
+INCLUDES = Serializer.hpp Data.hpp
+SRCS = main.cpp Serializer.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++

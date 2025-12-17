@@ -1,7 +1,7 @@
 NAME = program
 
-INCLUDES =  ${wildcard *.hpp}
-SRCS =  ${wildcard *.cpp}
+INCLUDES = iter.hpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++

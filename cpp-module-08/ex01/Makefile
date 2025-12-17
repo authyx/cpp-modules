@@ -1,7 +1,7 @@
 NAME = program
 
-INCLUDES = $(wildcard *.hpp)
-SRCS = $(wildcard *.cpp)
+INCLUDES = Span.hpp
+SRCS = main.cpp Span.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++

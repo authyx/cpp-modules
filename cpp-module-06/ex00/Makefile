@@ -1,7 +1,7 @@
 NAME = program
 
-INCLUDES =  ${wildcard *.hpp}
-SRCS = ${wildcard *.cpp}
+INCLUDES = ScalarConverter.hpp
+SRCS = main.cpp ScalarConverter.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++

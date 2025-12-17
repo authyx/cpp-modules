@@ -1,7 +1,7 @@
 NAME = program
 
-INCLUDES =  ${wildcard *.hpp}
-SRCS = ${wildcard *.cpp}
+INCLUDES = Base.hpp A.hpp B.hpp C.hpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++
