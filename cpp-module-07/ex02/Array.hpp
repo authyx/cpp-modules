@@ -24,17 +24,11 @@ public:
 
 	class OutOfBoundsException : public std::exception
 	{
-	public:
 		virtual const char* what() const throw();
 	};
 
 	void display_elements(void) const;
-	void set_element(unsigned int index, T value)
-	{
-		if (index >= _size)
-			throw std::out_of_range("Index out of bounds");
-		_elements[index] = value;
-	}
+	void set_element(unsigned int index, T value);
 };
 
 #include "Array.tpp"

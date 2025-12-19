@@ -79,6 +79,14 @@ void Array<T>::display_elements() const
 }
 
 template <class T>
+void Array<T>::set_element(unsigned int index, T value)
+{
+	if (index >= _size)
+		throw OutOfBoundsException();
+	_elements[index] = value;
+}
+
+template <class T>
 unsigned int Array<T>::size() const
 {
 	return _size;

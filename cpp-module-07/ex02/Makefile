@@ -1,7 +1,7 @@
 NAME = program
 
 INCLUDES = Array.hpp Array.tpp
-SRCS = main.cpp Array.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++
