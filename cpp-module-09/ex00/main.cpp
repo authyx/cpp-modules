@@ -121,7 +121,7 @@ int main(int argc, char **argv)
 	}
 	try
 	{
-		btcExchange.loadData(argv[2]);
+		btcExchange.loadData("data.csv");
 		std::ifstream inputFile(argv[1]);
 		if (!inputFile.is_open())
 		{
