@@ -68,7 +68,7 @@ namespace
 		}
 
 		typedef typename Container::value_type value_type;
-		std::vector<std::pair<value_type, value_type>> pairs;
+		std::vector<std::pair<value_type, value_type> > pairs;
 		Container largers;
 
 		for (size_t i = 0; i < arr.size(); i += 2)
@@ -92,7 +92,7 @@ namespace
 
 		for (size_t i = 0; i < largers.size(); ++i)
 		{
-			for (typename std::vector<std::pair<value_type, value_type>>::iterator it = pairs.begin();
+			for (typename std::vector<std::pair<value_type, value_type> >::iterator it = pairs.begin();
 				 it != pairs.end(); ++it)
 			{
 				if (it->second == largers[i])
