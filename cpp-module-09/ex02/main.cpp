@@ -1,10 +1,19 @@
 #include "PmergeMe.hpp"
+#include <stdexcept>
 
 int main(int argc, char **argv)
 {
 	PmergeMe P;
 
-	P.parseArgs(argc, argv);
+	try
+	{
+		P.parseArgs(argc, argv);
+	}
+	catch (const std::exception &)
+	{
+		std::cerr << "Error" << std::endl;
+		return 1;
+	}
 
 	std::cout << "Before: ";
 	P.printVector();

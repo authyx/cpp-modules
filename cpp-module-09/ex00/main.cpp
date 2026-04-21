@@ -114,7 +114,7 @@ void processData(std::ifstream &inputFile, const BitcoinExchange &btcExchange)
 int main(int argc, char **argv)
 {
 	BitcoinExchange btcExchange;
-	if (argc != 3)
+	if (argc != 2)
 	{
 		std::cerr << "Error: Wrong number of arguments." << std::endl;
 		return 1;
