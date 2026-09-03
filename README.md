@@ -64,7 +64,7 @@
 
 ## What I learned
 
-Moved from C to C++ across these 10 modules — learning the class model, inheritance and polymorphism, operator overloading, templates, and the STL. The biggest jumps: understanding when to use `virtual` and why (polymorphism, not just "it's a keyword"), getting comfortable with templates (function templates, class templates, specialization), and learning the STL containers and algorithms instead of rolling everything by hand. The PmergeMe project was where I actually *used* a sort algorithm on real data and measured the performance difference — that's where the abstract stuff became concrete.
+Moved from C to C++ across these 10 modules — learning the class model, inheritance and polymorphism, operator overloading, templates, and the STL. The shift wasn't just learning new syntax; it was unlearning the C style of writing everything as functions operating on data, and starting to think in terms of objects that carry their own behavior. The biggest jumps: understanding when `virtual` actually means something (runtime polymorphism, not just a keyword to drop in), getting comfortable with templates (function templates, class templates, specialization), and learning the STL containers and algorithms instead of rolling everything by hand. PmergeMe was where the abstract STL work hit real data — a merge-insert sort on a sequence, with `std::deque` and `std::vector` underneath.
 
 ## How to build
 
